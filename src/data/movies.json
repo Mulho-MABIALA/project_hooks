@@ -1,0 +1,62 @@
+[
+  {
+    "titre": "Inception",
+    "description": "Un film de science-fiction sur les rêves et la réalité",
+    "posterURL": "https://fr.web.img2.acsta.net/medias/nmedia/18/72/34/14/19476654.jpg",
+    "note": 8.8
+  },
+  {
+    "titre": "The Dark Knight",
+    "description": "Batman affronte un criminel mystérieux dans Gotham",
+    "posterURL": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_QL75_UX190_CR0,0,190,281_.jpg",
+    "note": 9.0
+  },
+  {
+    "titre": "Interstellar",
+    "description": "Une épopée spatiale à la recherche d'une nouvelle terre",
+    "posterURL": "https://www.avoir-alire.com/IMG/logo/arton42057.jpg",
+    "note": 8.6
+  },
+  {
+    "titre": "Pulp Fiction",
+    "description": "Histoires entrelacées de criminels à Los Angeles",
+    "posterURL": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=300&h=450&fit=crop",
+    "note": 8.9
+  },
+  {
+    "titre": "The Shawshank Redemption",
+    "description": "L'histoire d'une amitié en prison",
+    "posterURL": "https://m.media-amazon.com/images/I/91s2I7v2a4L._AC_UF894,1000_QL80_.jpg",
+    "note": 9.3
+  },
+  {
+    "titre": "Parasite",
+    "description": "Une famille pauvre s'infiltre dans une famille riche",
+    "posterURL": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=300&h=450&fit=crop",
+    "note": 8.5
+  },
+  {
+    "titre": "The Matrix",
+    "description": "Un hackers découvre la vérité sur la réalité",
+    "posterURL": "https://upload.wikimedia.org/wikipedia/en/d/db/The_Matrix.png",
+    "note": 8.7
+  },
+  {
+    "titre": "Joker",
+    "description": "L'histoire sombre d'un homme rejeté par la société",
+    "posterURL": "https://fr.web.img6.acsta.net/pictures/19/09/03/12/02/4765874.jpg",
+    "note": 8.4
+  },
+  {
+    "titre": "Avengers: Endgame",
+    "description": "Les Avengers font un dernier effort pour sauver l'univers",
+    "posterURL": "https://fr.web.img2.acsta.net/pictures/19/04/04/09/04/0472053.jpg",
+    "note": 8.4
+  },
+  {
+    "titre": "Dune",
+    "description": "Une épopée futuriste sur la planète Arrakis",
+    "posterURL": "https://images.justwatch.com/poster/175511602/s718/dune.jpg",
+    "note": 8.0
+  }
+]

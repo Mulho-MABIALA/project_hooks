@@ -1,0 +1,40 @@
+/* Custom Slider Styles for Range Input */
+
+.slider-thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #dc2626 0%, #ec4899 100%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(220, 38, 38, 0.4);
+  border: 2px solid #fff;
+}
+
+.slider-thumb::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 24px rgba(220, 38, 38, 0.6);
+}
+
+.slider-thumb::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #dc2626 0%, #ec4899 100%);
+  cursor: pointer;
+  border: 2px solid #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(220, 38, 38, 0.4);
+}
+
+.slider-thumb::-moz-range-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 24px rgba(220, 38, 38, 0.6);
+}
+
+.slider-thumb::-moz-range-track {
+  background: transparent;
+  border: none;
+ }
