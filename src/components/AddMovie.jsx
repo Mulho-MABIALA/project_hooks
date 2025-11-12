@@ -6,6 +6,7 @@ const AddMovie = ({ onAddMovie }) => {
     titre: '',
     description: '',
     posterURL: '',
+    trailerURL: '',
     note: 5
   });
 
@@ -21,7 +22,7 @@ const AddMovie = ({ onAddMovie }) => {
     e.preventDefault();
 
     // Validation
-    if (!formData.titre.trim() || !formData.description.trim() || !formData.posterURL.trim()) {
+    if (!formData.titre.trim() || !formData.description.trim() || !formData.posterURL.trim() || !formData.trailerURL.trim()) {
       alert('Veuillez remplir tous les champs');
       return;
     }
@@ -40,6 +41,7 @@ const AddMovie = ({ onAddMovie }) => {
       titre: '',
       description: '',
       posterURL: '',
+      trailerURL: '',
       note: 5
     });
 
@@ -52,6 +54,7 @@ const AddMovie = ({ onAddMovie }) => {
       titre: '',
       description: '',
       posterURL: '',
+      trailerURL: '',
       note: 5
     });
     setIsOpen(false);
@@ -140,6 +143,22 @@ const AddMovie = ({ onAddMovie }) => {
                     name="posterURL"
                     placeholder="https://example.com/image.jpg"
                     value={formData.posterURL}
+                    onChange={handleInputChange}
+                    className="px-4 py-3 bg-white/5 border border-red-600/20 rounded-lg text-white placeholder-gray-400 focus:border-red-600 focus:outline-none focus:ring-2 focus:ring-red-600/50 focus:bg-red-600/10 transition-all duration-300 backdrop-blur-sm"
+                  />
+                </div>
+
+                {/* URL de la bande-annonce */}
+                <div className="flex flex-col gap-2">
+                  <label htmlFor="trailerURL" className="text-xs font-bold text-gray-300 uppercase tracking-widest">
+                    🎥 URL de la bande-annonce
+                  </label>
+                  <input
+                    id="trailerURL"
+                    type="url"
+                    name="trailerURL"
+                    placeholder="https://www.youtube.com/embed/..."
+                    value={formData.trailerURL}
                     onChange={handleInputChange}
                     className="px-4 py-3 bg-white/5 border border-red-600/20 rounded-lg text-white placeholder-gray-400 focus:border-red-600 focus:outline-none focus:ring-2 focus:ring-red-600/50 focus:bg-red-600/10 transition-all duration-300 backdrop-blur-sm"
                   />

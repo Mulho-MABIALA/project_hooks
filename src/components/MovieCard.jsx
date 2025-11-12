@@ -1,8 +1,14 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const MovieCard = ({ movie }) => {
   const { titre, description, posterURL, note } = movie;
   const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    navigate('/movie', { state: { movie } });
+  };
 
   return (
     <div
@@ -10,6 +16,7 @@ const MovieCard = ({ movie }) => {
       style={{ aspectRatio: '9/13', minWidth: '180px' }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={handleCardClick}
     >
       {/* Image avec overlay dark */}
       <div className="relative w-full h-full">
