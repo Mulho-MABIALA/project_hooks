@@ -59,7 +59,7 @@ const HomePage = ({ movies, onAddMovie, onFilterChange }) => {
       <footer className="relative border-t border-red-600/30 bg-gradient-to-t from-black to-transparent">
         <div className="text-center py-8 px-6">
           <p className="text-gray-600 text-xs md:text-sm tracking-widest uppercase mb-2">
-            MovieFlix © 2024
+            MovieFlix © 2025
           </p>
           <p className="text-gray-700 text-xs">
             Votre plateforme de streaming préférée
