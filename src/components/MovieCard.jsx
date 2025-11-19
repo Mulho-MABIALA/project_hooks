@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const MovieCard = ({ movie }) => {
+const MovieCard = ({ movie, movieId }) => {
   const { titre, description, posterURL, note } = movie;
   const [isHovered, setIsHovered] = useState(false);
   const navigate = useNavigate();
 
   const handleCardClick = () => {
-    navigate('/movie', { state: { movie } });
+    navigate(`/movie/${movieId}`);
   };
 
   return (

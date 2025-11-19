@@ -1,6 +1,9 @@
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
-const MovieDetail = ({ movie }) => {
+const MovieDetail = ({ movies }) => {
+  const { id } = useParams();
+  const movie = movies && movies[parseInt(id)];
+
   if (!movie) {
     return (
       <div className="w-full min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-black via-gray-950 to-gray-900">

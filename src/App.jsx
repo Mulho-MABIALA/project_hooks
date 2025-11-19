@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import HomePage from './components/HomePage'
 import MovieDetail from './components/MovieDetail'
 import moviesData from './data/movies.json'
@@ -7,7 +7,6 @@ import moviesData from './data/movies.json'
 function App() {
   // State pour gérer les films (initialiser avec les données JSON)
   const [movies, setMovies] = useState(moviesData)
-  const location = useLocation()
 
   // Fonction pour ajouter un nouveau film
   const handleAddMovie = (newMovie) => {
@@ -32,9 +31,9 @@ function App() {
         }
       />
       <Route
-        path="/movie"
+        path="/movie/:id"
         element={
-          <MovieDetail movie={location.state?.movie} />
+          <MovieDetail movies={movies} />
         }
       />
     </Routes>
